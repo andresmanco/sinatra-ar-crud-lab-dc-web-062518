@@ -1,0 +1,6 @@
+<% Post.all.each do |p| %>
+<li><a href="/posts/<%= p.id %>"><%= p.name%> </a></li>
+<p>
+<%=p.content%>
+</p>
+<% end %>
